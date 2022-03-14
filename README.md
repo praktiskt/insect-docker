@@ -11,7 +11,7 @@ make build
 # Run the container
 make run
 # or ...
-docker run praktiskt/insect:latest
+docker run -it praktiskt/insect:latest
 ```
 
 ## Releases
