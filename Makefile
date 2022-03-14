@@ -4,7 +4,7 @@ IMG_LATEST=${IMG_NAME}:$(shell git rev-parse HEAD)
 
 build: 
 	docker build . -t ${IMG_LATEST} &&\
-	docker tag ${IMG_LATEST} ${IMG_LATEST}
+	docker tag ${IMG_LATEST} ${IMG_THIS}
 
 run: build
 	docker run -it ${IMG_LATEST}
